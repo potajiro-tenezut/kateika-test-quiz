@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img" aria-labelledby="title desc">
+  <title id="title">包丁の部位</title>
+  <desc id="desc">包丁の先端、みね、刃元、柄を番号で示した図</desc>
+  <rect width="640" height="300" fill="#fffaf0"/>
+  <path d="M70 92 C230 62 360 72 446 114 L494 138 L446 166 C315 224 178 226 70 200 Z" fill="#d7e4e8" stroke="#53666d" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M74 200 C198 222 333 216 446 166 L494 138 L450 194 C344 248 190 248 74 214 Z" fill="#f5fbff" stroke="#53666d" stroke-width="5" stroke-linejoin="round"/>
+  <rect x="464" y="106" width="134" height="66" rx="26" fill="#8b5a2b" stroke="#5c3b1e" stroke-width="8"/>
+  <circle cx="540" cy="139" r="9" fill="#f7d68a"/>
+  <path d="M92 94 C230 70 357 78 446 114" fill="none" stroke="#53666d" stroke-width="5" stroke-linecap="round"/>
+  <g font-family="system-ui, sans-serif" font-weight="800" font-size="34" text-anchor="middle">
+    <circle cx="70" cy="91" r="24" fill="#f6a623"/><text x="70" y="103" fill="#fff">1</text>
+    <circle cx="270" cy="71" r="24" fill="#f6a623"/><text x="270" y="83" fill="#fff">2</text>
+    <circle cx="412" cy="191" r="24" fill="#f6a623"/><text x="412" y="203" fill="#fff">3</text>
+    <circle cx="548" cy="92" r="24" fill="#f6a623"/><text x="548" y="104" fill="#fff">4</text>
+  </g>
+</svg>

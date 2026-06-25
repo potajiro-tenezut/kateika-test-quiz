@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>家庭科テスト対策</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">家庭科テスト対策</p>
+          <h1>調理と食品の4択クイズ</h1>
+        </div>
+        <div class="score-chip" aria-live="polite">
+          <span id="scoreNow">0</span>/<span id="totalNow">0</span>
+        </div>
+      </header>
+
+      <section id="startScreen" class="panel">
+        <div class="hero-plate" aria-hidden="true">
+          <span>🥕</span>
+          <span>🍳</span>
+          <span>🥄</span>
+        </div>
+        <h2>重要語からしっかり確認しよう</h2>
+        <p>調味料、包丁、切り方、水の量、ピザ、さしすせそを1問ずつ練習できます。</p>
+        <label class="toggle-row">
+          <span>ランダム出題</span>
+          <input id="randomToggle" type="checkbox">
+        </label>
+        <button id="startButton" class="primary-button">はじめる</button>
+        <button id="reviewButton" class="secondary-button">間違えた問題だけ復習</button>
+        <p id="savedMistakes" class="saved-mistakes"></p>
+      </section>
+
+      <section id="quizScreen" class="panel quiz-panel hidden" aria-live="polite">
+        <div class="quiz-top">
+          <span id="categoryBadge" class="category-badge"></span>
+          <span id="progressText" class="progress-text"></span>
+        </div>
+        <div class="progress-bar" aria-hidden="true">
+          <span id="progressBar"></span>
+        </div>
+        <img id="questionImage" class="question-image hidden" alt="">
+        <h2 id="questionText"></h2>
+        <div id="choices" class="choices"></div>
+        <div id="feedback" class="feedback hidden"></div>
+        <button id="nextButton" class="primary-button hidden">次の問題</button>
+      </section>
+
+      <section id="resultScreen" class="panel result-panel hidden">
+        <p class="eyebrow">結果</p>
+        <h2 id="resultTitle"></h2>
+        <p id="resultDetail"></p>
+        <div class="result-actions">
+          <button id="retryButton" class="primary-button">もう一度</button>
+          <button id="reviewAgainButton" class="secondary-button">間違えた問題だけ復習</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
